@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style_index.css"> 
+    <script type="text/javascript" src="main_js.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <title>PokeDesktop</title>
+</head>
+
+<body>
+    <div class="sidemenu">
+        <div class="sortmenu">
+            <div class="sortheader">Sort by</div>
+            <button class="sortbutton">Number</button><br>
+            <button class="sortbutton">Attack</button><br>
+            <button class="sortbutton">Defense</button><br>
+            <button class="sortbutton">Special Atk</button><br>
+            <button class="sortbutton">Special Def</button><br>
+            <button class="sortbutton">Speed</button><br>
+            <button class="sortbutton">Health</button><br>
+        </div><br>
+        <div class="filtermenu">
+            <div class="filterheader">Filter by</div>
+            <button class="filterbutton">Generation</button><br>
+            <button class="filterbutton">Type</button><br>
+            <button class="filterbutton">Legendary</button><br>
+            <button class="filterbutton">Reset Filter</button><br>
+        </div><br>
+        <div class="teammenu">
+            <div class="teamheader">Your team</div>
+            <div class="pokeball">
+                <img src="ressources/images/other/pokeball-1.png" id="pokeball1">
+            </div><br>
+            <div class="pokeball">
+                <img src="ressources/images/other/pokeball-1.png" id="pokeball2">
+            </div><br>
+            <div class="pokeball">
+                <img src="ressources/images/other/pokeball-1.png" id="pokeball3">
+            </div><br>
+            <div class="pokeball">
+                <img src="ressources/images/other/pokeball-1.png" id="pokeball4">
+            </div><br>
+            <div class="pokeball">
+                <img src="ressources/images/other/pokeball-1.png" id="pokeball5">
+            </div><br>
+            <div class="pokeball">
+                <img src="ressources/images/other/pokeball-1.png" id="pokeball6">
+            </div><br>
+        </div>
+    </div>
+
+    <div class="maingrid">
+        <!-- TODO: calculate rows and columns needed
+             and generate html structure in js-->
+        <div class="row">
+            <div class="item">
+                <!-- TODO: generate item with 
+                    dynamically sized attribute icons in js-->
+                <!-- TODO: think about increasing performance
+                        when loading all items-->
+                <div class="attr_icon_container"></div>
+                <div class="attr_icon_container"></div>
+                <div class="attr_icon_container"></div>
+                <div class="attr_icon_container"></div>
+                <div class="attr_icon_container"></div>
+                <div class="attr_icon_container"></div>
+
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+</body>
