@@ -20,12 +20,12 @@ const PokeType = Object.freeze({
 });
 
 class Pokemon {
-    constructor(attack, defense,  spAttack,  spDefense,  speed,  health,  name,
-        number,  generation, legendary, type1, type2) {
+    constructor(attack, defense,  sp_attack,  sp_defense,  speed,  health,  name,
+        number,  generation, is_legendary, type1, type2) {
         this.attack = attack;
         this.defense = defense;
-        this.spAttack = spAttack;
-        this.spDefense = spDefense;
+        this.sp_attack = sp_attack;
+        this.sp_defense = sp_defense;
         this.speed = speed;
         this.health = health;
     
@@ -40,7 +40,7 @@ class Pokemon {
         this.name = name;
         this.number = number;
         this.generation = generation;
-        this.legendary = legendary;
+        this.is_legendary = is_legendary;
         this.type1 = type1;  // PokeType
         this.type2 = type2;  // PokeType
         //BufferedImage sprite;

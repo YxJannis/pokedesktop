@@ -1,7 +1,22 @@
-console.log(data[3]);
+let allPokemon = [];
 
-for (pokentity in data){
+for (i in data){
+    const attack = data[i]["attack"];
+    const defense = data[i]["defense"];
+    const sp_attack = data[i]["sp_attack"];
+    const sp_defense = data[i]["sp_defense"];
+    const speed = data[i]["speed"];
+    const health= data[i]["health"];
+    const name = data[i]["name"];
+    const number = data[i]["pokedex_number"];
+    const generation = data[i]["generation"];
+    const is_legendary = data[i]["is_legendary"];
+    const type1 = data[i]["type1"];
+    const type2 = data[i]["type2"];
+    const pokEntity = new Pokemon(attack, defense,  sp_attack,  sp_defense,  speed,  health,  name,
+        number,  generation, is_legendary, type1, type2);
 
+    allPokemon.push(pokEntity);
 }
 
 function getAttackScale(attack){
