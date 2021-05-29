@@ -50,3 +50,12 @@ const isLegendaryFilterButtonImg = document.createElement("img");
 isLegendaryFilterButtonImg.src = img_root_path + "buttons/buttonLegendary.png";
 const resetFilterButtonImg = document.createElement("img");
 resetFilterButtonImg.src = img_root_path + "buttons/buttonResetFilter.png";
+
+function scaleImage(image, scale){
+    // TODO: scale image according to scale
+    // but retain icon-div size
+    //image.style.width = '50%'
+    //image.style.height = 'auto'
+    
+    return image;
+}

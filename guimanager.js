@@ -36,15 +36,17 @@ health_icon.innerHTML = healthImg.outerHTML;
 let maingrid = document.getElementById("maingrid");
 let br = document.createElement("br");
 
-
-
-let row_items = 10;
-
-console.log(allPokemon.length);
+// calculate number of rows and columns
+let dimensionFactor = 1.0;
+let rows = Math.floor((1.0/dimensionFactor)*Math.sqrt(allPokemon.length));
+let cols = Math.ceil(dimensionFactor*Math.sqrt(allPokemon.length));
+let row_items = cols; // debug helper to control # of items per row
 
 let row_counter = 0;
 let item_counter = 0;
 
+// fill grid
+// TODO: make "maingrid" div to "display: grid" in css and fill automatically?
 for (i = 0; i < allPokemon.length; i = i + row_items){
     let row = document.createElement("div");
     row.setAttribute("class", "row");
