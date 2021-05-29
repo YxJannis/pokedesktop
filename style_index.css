@@ -36,6 +36,15 @@
 }
 
 .item {
+    float: left;
+    margin: 0.2em;
+}
+
+.row {
+    display: inline-block;
+}
+
+.item {
     border: 1px solid black;
     width: 90px; /* should be 90 (3 * 30px) */
     height: 90px; /* should be 90 (2 * 45px) */
